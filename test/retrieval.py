@@ -11,9 +11,9 @@ from keras.models import Model
 maxlen = 64
 
 # bert配置
-config_path = '/root/kg/bert/chinese_roformer-sim-char-ft_L-12_H-768_A-12/bert_config.json'
-checkpoint_path = '/root/kg/bert/chinese_roformer-sim-char-ft_L-12_H-768_A-12/bert_model.ckpt'
-dict_path = '/root/kg/bert/chinese_roformer-sim-char-ft_L-12_H-768_A-12/vocab.txt'
+config_path = '../pretrained_model/chinese_roformer-sim-char_L-6_H-384_A-6/bert_config.json'
+checkpoint_path = '../pretrained_model/chinese_roformer-sim-char_L-6_H-384_A-6/bert_model.ckpt'
+dict_path = '../pretrained_model/chinese_roformer-sim-char_L-6_H-384_A-6/vocab.txt'
 
 # 建立分词器
 tokenizer = Tokenizer(dict_path, do_lower_case=True)  # 建立分词器
